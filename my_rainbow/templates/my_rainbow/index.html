@@ -10,6 +10,8 @@
     <title>Радуга</title>
 </head>
 <body>
-    <div id="color"></div>
+    {% for color,col in colors.items %}
+        <h1 style="color: {{color}}" >{{col}}</h1>
+    {% endfor %}
 </body>
 </html>
